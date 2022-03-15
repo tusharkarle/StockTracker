@@ -1,0 +1,75 @@
+* {
+  color: white;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  background-color: aqua;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-around;
+  height: 10vh;
+  width: 20%;
+}
+
+.logo img {
+  width: 60px;
+  border-radius: 20px;
+  margin: 20px 20px;
+}
+.logo h1 {
+  font-size: 2rem;
+}
+
+.navItems {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 10vh;
+}
+
+.navItems ul {
+  align-items: center;
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-around;
+}
+.navItems ul li {
+  align-items: center;
+  justify-content: center;
+  margin: 10px 30px;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navItems ul li:hover {
+ background-color: rgb(23, 228, 217);
+ color: black;
+}
+
+.ifNotLoggedIn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 30%;
+}
+.ifNotLoggedIn h1 {
+  margin: 20px 30px;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 30px;
+}
+.ifNotLoggedIn h1:hover {
+ background-color: rgb(23, 228, 217);
+ color: black;
+}
