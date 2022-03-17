@@ -1,0 +1,60 @@
+*{
+  font-size: 1.5rem;
+}
+.indices-stock{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.indices{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 1vh;
+
+}
+
+.individual-indices{
+  padding: 30px;
+  flex-wrap: wrap;
+  border: 0.5px rgb(216, 209, 196) solid;
+  border-radius: 20px;
+}
+
+.individual-indices h6{
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+
+.topgainers{
+  display: flex;
+
+}
+.components{
+  padding: 33px 40px;
+
+}
+.components h1{
+ font-size: 2rem;
+}
+.g{
+  background-color: green;
+  border-radius: 20px;
+  padding: 4px;
+}
+.l{
+  background-color: red;
+  border-radius: 20px;
+  padding: 4px;
+}
+/* bootstrap addups begin here */
+/* .indices div{
+  width: 50%;
+  justify-content: center;
+  border:2px red solid;
+  display: flex;
+  flex-direction: column;
+}
+ */

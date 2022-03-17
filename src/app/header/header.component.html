@@ -1,20 +1,47 @@
-<div class="header">
-  <div class="logo">
-    <img src="../../assets/logo.png" alt="logo" />
-    <h1>StockTracker</h1>
-  </div>
+<nav class="navbar navbar-expand-lg navbar-dark text-light">
+  <div class="container-fluid">
+    <img src="../../assets/logo.png"  class="img-fluid logo" alt="Responsive image">
+    <h1 class="text-light" routerLink="">StockTracker</h1>
 
-  <div class="navItems">
-    <ul>
-      <li routerLink="">Home</li>
-      <li routerLink="watchlist">Watchlist</li>
-      <li routerLink="portfolio">PortFolio</li>
-      <li routerLink="contact">Contact</li>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <h3 class="nav-link" routerLink="">Home</h3>
+        </li>
+        <li class="nav-item">
+          <h3 class="nav-link" routerLink="watchlist">Watchlist</h3>
+        </li>
+        <li class="nav-item">
+          <h3 class="nav-link" routerLink="portfolio">Portfolio</h3>
+        </li>
+        <li class="nav-item">
+          <h3 class="nav-link" routerLink="contact">Contact</h3>
+        </li>
+      </ul>
+    </div>
 
-  <div class="ifNotLoggedIn">
-    <h1>Login</h1>
-    <h1>Register</h1>
+    <div class="d-flex navbar-expand-lg login-register">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <h3 class="nav-link active">Login</h3>
+        </li>
+        <li class="nav-item">
+          <h3 class="nav-link">Register</h3>
+        </li>
+      </ul>
+    </div>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
   </div>
-</div>
+</nav>

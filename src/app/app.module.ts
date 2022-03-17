@@ -9,7 +9,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { WatchlistComponent } from './watchlist/watchlist.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
