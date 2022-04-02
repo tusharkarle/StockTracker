@@ -21,7 +21,7 @@ export class HomepageComponent implements OnInit {
 
     this.apifetch.TopGainers().subscribe((gainersdata) => {
       this.topGainers = gainersdata;
-      this.topGainers=this.topGainers;
+      this.topGainers = this.topGainers;
       console.log(this.topGainers);
     });
     this.apifetch.toplosers().subscribe((losersdata) => {

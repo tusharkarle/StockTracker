@@ -1,0 +1,21 @@
+<div class="addStocks">
+  <form class="example-form">
+    <input
+      type="text"
+      #stockName
+      placeholder="Search for a street"
+      [formControl]="control"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option
+        *ngFor="let street of filteredStreets | async"
+        [value]="street"
+      >
+        {{ street }}
+      </mat-option>
+    </mat-autocomplete>
+  </form>
+
+  <button (click)="SearchStock(stockName.value)">Search Stock</button>
+</div>

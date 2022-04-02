@@ -1,0 +1,4 @@
+.addStocks {
+  display: flex;
+  justify-content: space-around;
+}

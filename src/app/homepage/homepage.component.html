@@ -1,23 +1,25 @@
-
 <!-- bootstrap files -->
 
-<div class="container-fluid components">
+<div class="components">
   <div class="indices-stock">
-    <div class="1">
+    <div class="left-index">
       <h1>Nifty 50</h1>
       <h4>{{ stockIndices.data[0].previousClose }}</h4>
     </div>
-    <div class="1">
+    <div class="right-index">
       <h1>Bank Nifty</h1>
       <h4>{{ stockIndices.data[3].previousClose }}</h4>
     </div>
   </div>
 </div>
 
-<div class="container-fluid components">
+<div class="components">
   <h1 class="text-center g">Top Gainers</h1>
   <div class="indices">
-    <div class="individual-indices" *ngFor="let item of topGainers.data.slice(0, 5)">
+    <div
+      class="individual-indices"
+      *ngFor="let item of topGainers.data.slice(0, 5)"
+    >
       <h6>{{ item.symbol }}</h6>
       <h6>{{ item.ltp }}</h6>
       <h6>{{ item.netPrice }} %</h6>
@@ -25,10 +27,13 @@
   </div>
 </div>
 
-<div class="container-fluid components">
+<div class="components">
   <h1 class="text-center l">Top Losers</h1>
   <div class="indices">
-    <div class="individual-indices" *ngFor="let item of toplosers.data.slice(0, 5) ">
+    <div
+      class="individual-indices"
+      *ngFor="let item of toplosers.data.slice(0, 5)"
+    >
       <h6>{{ item.symbol }}</h6>
       <h6>{{ item.ltp }}</h6>
       <h6>{{ item.netPrice }}%</h6>
@@ -36,4 +41,3 @@
   </div>
 </div>
 <!--  -->
-

@@ -1,60 +1,71 @@
-*{
+* {
   font-size: 1.5rem;
+  color: white;
 }
-.indices-stock{
+.indices-stock {
   display: flex;
   justify-content: space-around;
-
+}
+.right-index,
+.left-index {
+  box-sizing: initial;
+  padding: 0.5rem 2rem;
+  border: 2px rgb(15, 228, 210) solid;
+  border-radius: 2rem;
+}
+.right-index :hover,
+.left-index :hover {
+  background-color: cornsilk;
+  color: darkolivegreen;
 }
 
-.indices{
+.indices {
   display: flex;
   width: 100%;
   justify-content: space-around;
   padding-top: 1vh;
-
 }
 
-.individual-indices{
-  padding: 30px;
+.individual-indices {
+  /* padding:0 2rem ;
   flex-wrap: wrap;
   border: 0.5px rgb(216, 209, 196) solid;
-  border-radius: 20px;
-}
-
-.individual-indices h6{
-  font-size: 1.5rem;
-  text-align: center;
-
-}
-
-.topgainers{
-  display: flex;
-
-}
-.components{
-  padding: 33px 40px;
-
-}
-.components h1{
- font-size: 2rem;
-}
-.g{
-  background-color: green;
-  border-radius: 20px;
-  padding: 4px;
-}
-.l{
-  background-color: red;
-  border-radius: 20px;
-  padding: 4px;
-}
-/* bootstrap addups begin here */
-/* .indices div{
-  width: 50%;
-  justify-content: center;
-  border:2px red solid;
+  border-radius: 2rem; */
   display: flex;
   flex-direction: column;
+  border: 0.5px rgb(216, 209, 196) solid;
+  border-radius: 2rem;
+  padding: 1.5rem;
 }
- */
+
+.individual-indices h6 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.topgainers {
+  display: flex;
+}
+.components {
+  padding: 2.3rem 3.3rem;
+}
+.components h1 {
+  font-size: 2rem;
+}
+.g {
+  background-color: green;
+  border-radius: 2rem;
+  padding: 0.4rem;
+}
+.l {
+  background-color: red;
+  border-radius: 2rem;
+  padding: 0.4rem;
+}
+
+@media (max-width: 1000px) {
+  .individual-indices h6 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

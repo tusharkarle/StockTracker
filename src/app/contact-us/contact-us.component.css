@@ -1,0 +1,29 @@
+
+
+.container-fluid {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px red solid;
+}
+
+.elements h1 {
+  font-size: 2rem;
+}
+
+.elements img {
+  width: 4rem;
+  height: 3.5rem;
+}
+
+@media (max-width<850px) {
+  .container-fluid {
+    font-size: 5px;
+  }
+}
+
+@media (max-width<480px) {
+  html {
+    font-size: 2px;
+  }
+}

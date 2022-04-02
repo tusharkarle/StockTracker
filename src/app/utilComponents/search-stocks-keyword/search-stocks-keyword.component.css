@@ -1,0 +1,27 @@
+* {
+  color: white;
+}
+
+.individualStock {
+  display: flex;
+  justify-content: space-around;
+  border: 2px red solid;
+}
+.individualStock h1 {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+.individualStock button {
+  width: 20rem;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+}
+
+input,
+button {
+  color: black;
+}

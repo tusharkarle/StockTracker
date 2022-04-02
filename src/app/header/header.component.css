@@ -1,35 +1,97 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: white;
 }
-.navbar{
-  padding-bottom: 20px;
+
+html {
+  font-size: 62.5%;
 }
-.container-fluid h1{
+h1 {
   font-size: 2rem;
 }
+.header {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  justify-content: space-between;
+}
 
-.container-fluid h3{
+.titleLogo {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleLogo img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 2rem;
+  margin: 0 1rem;
+}
+
+.items {
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+
+.item {
+  margin: 0rem 1rem;
+}
+
+.item :hover {
+  background-color: rgb(22, 187, 216);
+  padding: 0.2rem 0.4rem;
+  border-radius: 1rem;
+  color: black;
   font-size: 1.5rem;
 }
 
-.nav-item{
-  margin:0px 3vw;
-}
-
-.nav-item:hover{
-  background-color: rgb(23, 228, 217);
- color: black;
-}
-
-
-.login-register{
+.login {
+  width: 20%;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo{
-  max-width: 40px;
-  max-height: 40px;
-  border-radius: 20px;
-  margin: 0px 5px;
+.dropdown {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .titleLogo {
+    margin: 0 1.5rem;
+  }
+  .titleLogo img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .items {
+    display: none;
+  }
+  .login {
+    width: 40%;
+    justify-content: flex-end;
+  }
+
+  .dropdown {
+    width: 30%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dropdown button {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(184, 224, 224);
+    color: black;
+  }
 }

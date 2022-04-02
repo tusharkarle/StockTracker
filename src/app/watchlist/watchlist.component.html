@@ -1,1 +1,10 @@
-<p>watchlist works!</p>
+<h1>Search Stocks</h1>
+
+<app-search-stocks-keyword></app-search-stocks-keyword>
+
+<h1>Watchlist stocks</h1>
+<div class="stockList" *ngFor="let item of stocksList">
+  <h1>{{ item }}</h1>
+</div>
+
+<app-list-stock-list [stockData]="stockUserData"></app-list-stock-list>

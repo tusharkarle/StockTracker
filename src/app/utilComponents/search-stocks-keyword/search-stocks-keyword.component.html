@@ -1,0 +1,15 @@
+<div class="search">
+  <div><label for="">Keyword</label> <input type="text" #keyword /></div>
+
+  <button (click)="SearchStocks(keyword.value)">Search Stock</button>
+</div>
+
+<div class="displayStocks" *ngFor="let stock of searchStocks; let i = index">
+  <div class="individualStock">
+    <h1>{{ stock.name }}}</h1>
+    <h1 #symbolstock>{{ stock.symbol }}</h1>
+    <button (click)="addToWatchList(symbolstock.innerHTML)">
+      Add to WatchList
+    </button>
+  </div>
+</div>

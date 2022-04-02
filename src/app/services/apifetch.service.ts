@@ -9,6 +9,10 @@ export class ApifetchService {
   private topGainersurl = 'http://localhost:3000/nse/get_gainers';
   private toplosersurl = 'http://localhost:3000/nse/get_losers';
   private topVolumeURL = 'http://localhost:3000/nse/get_top_volume_stocks';
+
+  private allStockList: string = 'http://localhost:3000/getstocklist';
+
+
   constructor(private http: HttpClient) {}
 
   getIndices(): Observable<any> {
@@ -25,4 +29,10 @@ export class ApifetchService {
   topVolume(): Observable<any> {
     return this.http.get(this.topVolumeURL);
   }
+
+  getStockList(): Observable<any> {
+    return this.http.get(this.allStockList);
+  }
+
+  
 }

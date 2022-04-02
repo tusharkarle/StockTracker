@@ -1,0 +1,12 @@
+html {
+  color: white;
+  background: black;
+}
+
+* {
+  color: aliceblue;
+}
+
+form input {
+  color: black;
+}
