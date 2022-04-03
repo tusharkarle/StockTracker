@@ -2,6 +2,8 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: "Mochiy Pop P One", sans-serif;
   /* color: aliceblue; */
 }
 
@@ -12,5 +14,5 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Mochiy Pop P One", sans-serif;
 }

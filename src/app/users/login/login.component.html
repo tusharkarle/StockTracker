@@ -1,24 +1,31 @@
-<div class="wrapper">
-  <h1>Login</h1>
+<!-- Real ui Begins here -->
 
-  <form>
-    <label for="">Email</label>
-    <input
-      type="email"
-      name="email"
-      [(ngModel)]="registerUserData.email"
-      required
-      placeholder="email"
-    />
-    <label for="">Password</label>
-    <input
-      type="text"
-      name="password"
-      [(ngModel)]="registerUserData.password"
-      required
-      placeholder="password"
-    />
-
-    <button class="btn btn-primary" (click)="loginUser()">Login</button>
-  </form>
+<div class="page">
+  <div class="lefthalf">
+    <div class="imgbackground">
+      <img src="../../../assets/phonelogo.svg" alt="img" />
+    </div>
+  </div>
+  <div class="righthalf">
+    <div class="top">
+      <h1>Login</h1>
+    </div>
+    <form>
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="registerUserData.email"
+        required
+        placeholder="email"
+      />
+      <input
+        type="text"
+        name="password"
+        [(ngModel)]="registerUserData.password"
+        required
+        placeholder="password"
+      />
+      <button (click)="loginUser()">Login</button>
+    </form>
+  </div>
 </div>

@@ -1,67 +1,35 @@
-<div class="header">
-  <div class="titleLogo">
-    <img src="../../assets/logo.png" alt="Responsive image" />
-    <h1 routerLink="">StockTracker</h1>
+<div class="navbar">
+  <div class="logo" routerLink="">
+    <img src="../../assets/logo.png" alt="" />
+    <h1>StockTracker</h1>
   </div>
 
-  <div class="items">
-    <div class="item">
-      <h1 routerLink="">Home</h1>
+  <div class="lists">
+    <div class="listItem" routerLink="">
+      <h1>HomePage</h1>
     </div>
-    <div class="item">
-      <h1 routerLink="watchlist">Watchlist</h1>
+    <div class="listItem" routerLink="watchlist">
+      <h1>Watchlist</h1>
     </div>
-    <div class="item">
-      <h1 routerLink="portfolio">Portfolio</h1>
-    </div>
-
-    <div class="item">
-      <h1 routerLink="contact">Contact</h1>
+    <div class="listItem" routerLink="portfolio">
+      <h1>Portfolio</h1>
     </div>
   </div>
 
-  <div class="login">
-    <div class="item">
-      <h1 routerLink="login" *ngIf="!this.userapi.loggedIn()">Login</h1>
+  <div class="userActive">
+    <div class="item" routerLink="login" *ngIf="!this.userapi.loggedIn()">
+      <h1>Login</h1>
     </div>
-    <div class="item">
-      <h1 routerLink="register" *ngIf="!this.userapi.loggedIn()">Register</h1>
+    <div class="item" routerLink="register" *ngIf="!this.userapi.loggedIn()">
+      <h1>Register</h1>
     </div>
-    <div class="item">
-      <h1 (click)="logoutUser()" *ngIf="this.userapi.loggedIn()">Logout</h1>
-    </div>
-  </div>
-
-  <!-- dropdown menu -->
-
-  <div class="dropdown">
-    <button
-      class="btn btn-secondary dropdown-toggle"
-      type="button"
-      id="dropdownMenuButton1"
-      data-bs-toggle="dropdown"
-      aria-expanded="false"
+    <div
+      class="item"
+      routerLink="register"
+      *ngIf="this.userapi.loggedIn()"
+      (click)="logoutUser()"
     >
-      Dropdown
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <div class="item">
-        <h1 class="dropdown-item">Home</h1>
-      </div>
-      <div class="item">
-        <h1 class="dropdown-item">Watchlist</h1>
-      </div>
-      <div class="item">
-        <h1 class="dropdown-item">Portfolio</h1>
-      </div>
-
-      <div class="item">
-        <h1 class="dropdown-item">Contact</h1>
-      </div>
-    </ul>
+      <h1>Logout</h1>
+    </div>
   </div>
 </div>
-<!-- dropdown menu ends -->
-
-<!-- real ui starts here -->
-

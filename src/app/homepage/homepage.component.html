@@ -1,14 +1,46 @@
-<!-- bootstrap files -->
-
 <div class="components">
   <div class="indices-stock">
     <div class="left-index">
-      <h1>Nifty 50</h1>
-      <h4>{{ stockIndices.data[0].previousClose }}</h4>
+      <h1 class="tit">Nifty 50</h1>
+      <div class="right">
+        <h1
+          [ngClass]="{
+            green: stockIndices.data[0].percChange > 0,
+            red: stockIndices.data[0].percChange <= 0
+          }"
+        >
+          {{ stockIndices.data[0].previousClose }}
+        </h1>
+        <p
+          [ngClass]="{
+            green: stockIndices.data[0].percChange > 0,
+            red: stockIndices.data[0].percChange <= 0
+          }"
+        >
+          {{ stockIndices.data[0].percChange }} %
+        </p>
+      </div>
     </div>
     <div class="right-index">
       <h1>Bank Nifty</h1>
-      <h4>{{ stockIndices.data[3].previousClose }}</h4>
+      <div class="right">
+        <h1
+          [ngClass]="{
+            green: stockIndices.data[3].percChange > 0,
+            red: stockIndices.data[3].percChange <= 0
+          }"
+        >
+          {{ stockIndices.data[3].previousClose }}
+        </h1>
+        <p
+          [ngClass]="{
+            green: stockIndices.data[3].percChange > 0,
+            red: stockIndices.data[3].percChange <= 0
+          }"
+        >
+          {{ stockIndices.data[3].percChange }} %
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -40,4 +72,42 @@
     </div>
   </div>
 </div>
-<!--  -->
+
+<!-- real ui begins here -->
+<!--
+<div class="indices">
+  <div class="title"><h1>Indices</h1></div>
+
+  <div class="items">
+    <div
+      class="item"
+      [ngClass]="{
+        green: stockIndices.data[0].percChange > 0,
+        red: stockIndices.data[0].percChange <= 0
+      }"
+    >
+      <div class="left-item">
+        <h1>Nifty 50</h1>
+      </div>
+      <div class="right-item">
+        <h4>{{ stockIndices.data[0].previousClose }}</h4>
+        <p>{{ stockIndices.data[0].percChange }} %</p>
+      </div>
+    </div>
+    <div
+      class="item"
+      [ngClass]="{
+        green: stockIndices.data[3].percChange > 0,
+        red: stockIndices.data[3].percChange <= 0
+      }"
+    >
+      <div class="left-item">
+        <h1>Nifty Bank</h1>
+      </div>
+      <div class="right-item">
+        <h4>{{ stockIndices.data[3].previousClose }}</h4>
+        <p>{{ stockIndices.data[3].percChange }} %</p>
+      </div>
+    </div>
+  </div>
+</div> -->
