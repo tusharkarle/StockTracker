@@ -1,6 +1,6 @@
 * {
   font-size: 1.5rem;
-  color: white;
+  color: rgba(255, 255, 255, 1);
   font-family: "Rubik", sans-serif;
   box-sizing: border-box;
 }
@@ -20,12 +20,14 @@ h6 {
   width: 25%;
   height: 100%;
   box-sizing: initial;
-  padding: 0.5rem 2rem;
-  border: 2px rgb(15, 228, 210) solid;
+  padding: 1rem 2rem;
+  border: 2px #364153 solid;
   border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background: #364153;
+  color: rgba(255, 255, 255, 1);
 }
 
 .green {
@@ -52,11 +54,30 @@ h6 {
 .individual-indices {
   display: flex;
   flex-direction: column;
-  border: 0.5px rgb(216, 209, 196) solid;
+  border: 2px #364153 solid;
+  background: #364153;
+  color: rgba(255, 255, 255, 1);
   border-radius: 2rem;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
+.stockName {
+  color: #e8e80f;
+}
+
+.right-elem h5 {
+  color: rgb(20, 223, 108);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+}
+
+.lost-elem h5 {
+  color: rgb(223, 20, 20);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+}
 .individual-indices h6 {
   font-size: 1.5rem;
   text-align: center;
@@ -81,6 +102,12 @@ h6 {
   background-color: red;
   border-radius: 2rem;
   padding: 0.4rem;
+}
+
+.tit {
+  color: rgba(255, 255, 255, 1);
+  padding-top: 1rem;
+  font-size: 4rem;
 }
 
 @media (max-width: 1000px) {
