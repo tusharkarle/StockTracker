@@ -65,10 +65,12 @@ export class WatchlistComponent implements OnInit, OnChanges {
     let finalUrl =
       'http://localhost:3000/nse/get_multiple_quote_info?companyNames=' +
       this.stockListUrl;
-    console.log(finalUrl);
+    console.log(finalUrl)
     this.http.get(finalUrl).subscribe((res: any) => {
       this.stockUserData = res;
       console.log(this.stockUserData);
     });
   }
 }
+
+

@@ -1,3 +1,33 @@
 h1 {
-  color: aliceblue;
+  color: rgb(10, 40, 67);
+}
+
+.wraper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.individual-stocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(85, 108, 128); */
+}
+
+.card {
+  display: flex;
+  width: 80%;
+}
+
+.main-div {
+  background-color: red;
+  border-radius: 20rem;
+}
+
+.header {
+  border-radius: 20rem;
 }

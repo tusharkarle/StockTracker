@@ -7,6 +7,7 @@ import { UserloginRegisterService } from 'src/app/services/userlogin-register.se
   styleUrls: ['./list-stock-list.component.css'],
 })
 export class ListStockListComponent implements OnInit {
+  panelOpenState = false;
   @Input() stockData: any;
   constructor(private userlogin: UserloginRegisterService) {}
   ngOnInit(): void {}

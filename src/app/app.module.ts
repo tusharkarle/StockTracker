@@ -22,6 +22,7 @@ import { RouterModule } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { ListStockListComponent } from './utilComponents/list-stock-list/list-stock-list.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { ListStockListComponent } from './utilComponents/list-stock-list/list-st
     MatRippleModule,
     FormsModule,
     RouterModule,
+    MatExpansionModule,
   ],
   providers: [
     AuthGuard,

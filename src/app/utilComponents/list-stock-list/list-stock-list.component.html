@@ -1,6 +1,42 @@
-<div class="displayStockList" *ngFor="let item of stockData">
+<!-- <div class="displayStockList" *ngFor="let item of stockData">
   <div class="individualStock">
     <h1>{{ item.data[0].symbol }}</h1>
     <h1>{{ item.data[0].lastPrice }}</h1>
+  </div>
+</div> -->
+
+<!-- <div class="wraper">
+  <div class="indices">
+    <div class="individual-indices" *ngFor="let item of stockData">
+      <h6 class="stockName">{{ item.data[0].symbol }}</h6>
+      <div class="right-elem">
+        <h6>{{ item.data[0].lastPrice }}</h6>
+        <h5>{{ item.netPrice }} %</h5>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="wraper">
+  <div class="individual-stocks" *ngFor="let item of stockData">
+    <mat-accordion class="card">
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+        class="main-div"
+      >
+        <mat-expansion-panel-header class="header">
+          <mat-panel-title>
+            <h6 class="stockName">
+              {{ item.data[0].symbol }}
+            </h6></mat-panel-title
+          >
+          <mat-panel-description>
+            <h6>{{ item.data[0].lastPrice }}</h6>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <h6>{{ item.data[0].lastPrice }}</h6>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
 </div>
