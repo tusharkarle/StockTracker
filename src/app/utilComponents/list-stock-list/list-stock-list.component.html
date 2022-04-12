@@ -28,14 +28,30 @@
         <mat-expansion-panel-header class="header">
           <mat-panel-title>
             <h6 class="stockName">
+              <img
+                src="../../../assets/close_black_24dp.svg"
+                alt=""
+                (click)="deleteStockWatchlist(item.data[0].symbol)"
+              />
               {{ item.data[0].symbol }}
             </h6></mat-panel-title
           >
-          <mat-panel-description>
+          <mat-panel-description class="flex">
             <h6>{{ item.data[0].lastPrice }}</h6>
+            <h6>{{ item.data[0].change }}</h6>
+            <h6>{{ item.data[0].pChange }}</h6>
           </mat-panel-description>
         </mat-expansion-panel-header>
-        <h6>{{ item.data[0].lastPrice }}</h6>
+        <div class="flex">
+          <div class="flex">
+            <p>Day High:-</p>
+            <p>{{ item.data[0].dayHigh }}</p>
+          </div>
+          <div class="flex">
+            <p>Day low:-</p>
+            <p>{{ item.data[0].dayLow }}</p>
+          </div>
+        </div>
       </mat-expansion-panel>
     </mat-accordion>
   </div>

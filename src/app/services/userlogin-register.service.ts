@@ -49,4 +49,13 @@ export class UserloginRegisterService {
   loadWatchlist(data: any): Observable<any> {
     return this.http.post(this.loadPortfolio, data);
   }
+
+  // remove the stock from watchlist
+  private removeWatchlist = 'http://localhost:3000/removeStockWatchlist';
+  removeStock(stockName: any): Observable<any> {
+    const usertoken = localStorage.getItem('token');
+    const stockJSON = { name: stockName, token: usertoken };
+
+    return this.http.post(this.removeWatchlist, stockJSON);
+  }
 }

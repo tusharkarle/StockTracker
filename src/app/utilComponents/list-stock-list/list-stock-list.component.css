@@ -1,5 +1,9 @@
-h1 {
-  color: rgb(10, 40, 67);
+* {
+  color: rgb(255, 255, 255);
+  font-family: "Rubik", sans-serif;
+}
+h6 {
+  font-size: 2rem;
 }
 
 .wraper {
@@ -7,6 +11,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .individual-stocks {
@@ -15,19 +20,19 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1.5rem;
+  height: 4rem;
   /* background-color: rgb(85, 108, 128); */
 }
 
 .card {
   display: flex;
   width: 80%;
+  background-color: #364153;
 }
 
 .main-div {
-  background-color: red;
-  border-radius: 20rem;
-}
-
-.header {
-  border-radius: 20rem;
+  background-color: #364153;
+  border-radius: 200rem;
+  align-items: center;
 }

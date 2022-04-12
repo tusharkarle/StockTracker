@@ -11,4 +11,13 @@ export class ListStockListComponent implements OnInit {
   @Input() stockData: any;
   constructor(private userlogin: UserloginRegisterService) {}
   ngOnInit(): void {}
+  deleteStockWatchlist(stockName: any) {
+    this.stockData = this.stockData.filter(
+      (item: any) => item.data[0].symbol != stockName
+    );
+    this.userlogin.removeStock(stockName).subscribe((data) => {
+      console.log(data);
+    });
+    console.log(this.stockData);
+  }
 }
