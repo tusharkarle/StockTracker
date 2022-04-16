@@ -1,0 +1,9 @@
+* {
+  color: white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.portfolio-page {
+  padding: 5rem;
+  text-align: center;
+}

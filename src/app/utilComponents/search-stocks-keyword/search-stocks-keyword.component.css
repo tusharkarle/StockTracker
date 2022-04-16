@@ -21,6 +21,15 @@
   justify-content: space-around;
 }
 
+.search button {
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.search input {
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
 input,
 button {
   color: black;

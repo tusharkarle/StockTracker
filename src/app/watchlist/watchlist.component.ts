@@ -20,7 +20,7 @@ export const _filter = (opt: string[], value: string): string[] => {
   templateUrl: './watchlist.component.html',
   styleUrls: ['./watchlist.component.css'],
 })
-export class WatchlistComponent implements OnInit, OnChanges {
+export class WatchlistComponent implements OnInit {
   stocksList: any = [];
   stockListUrl: string = '';
   stockUserData: any = [];
@@ -30,12 +30,7 @@ export class WatchlistComponent implements OnInit, OnChanges {
   ) {
     this.loadList();
   }
-  ngOnInit() {
-    this.loadList();
-  }
-  ngOnChanges() {
-    this.loadList();
-  }
+  ngOnInit() {}
   // user functions
   loadList() {
     let token: any = localStorage.getItem('token');
@@ -65,12 +60,11 @@ export class WatchlistComponent implements OnInit, OnChanges {
     let finalUrl =
       'http://localhost:3000/nse/get_multiple_quote_info?companyNames=' +
       this.stockListUrl;
-    console.log(finalUrl)
+    console.log(finalUrl);
     this.http.get(finalUrl).subscribe((res: any) => {
       this.stockUserData = res;
+      console.log('hello');
       console.log(this.stockUserData);
     });
   }
 }
-
-

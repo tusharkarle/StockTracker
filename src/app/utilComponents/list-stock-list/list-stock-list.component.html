@@ -1,22 +1,3 @@
-<!-- <div class="displayStockList" *ngFor="let item of stockData">
-  <div class="individualStock">
-    <h1>{{ item.data[0].symbol }}</h1>
-    <h1>{{ item.data[0].lastPrice }}</h1>
-  </div>
-</div> -->
-
-<!-- <div class="wraper">
-  <div class="indices">
-    <div class="individual-indices" *ngFor="let item of stockData">
-      <h6 class="stockName">{{ item.data[0].symbol }}</h6>
-      <div class="right-elem">
-        <h6>{{ item.data[0].lastPrice }}</h6>
-        <h5>{{ item.netPrice }} %</h5>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <div class="wraper">
   <div class="individual-stocks" *ngFor="let item of stockData">
     <mat-accordion class="card">
